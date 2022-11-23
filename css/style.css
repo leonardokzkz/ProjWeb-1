@@ -1,0 +1,146 @@
+/* Resete CSS - Padronização para todos navegadores*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fontes */
+html, body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Imagem de fundo */
+body {
+    background: url(/img/background.jpg) no-repeat center 0;
+}
+/* Esttilo cabeçalho */
+.logomarca {
+    width: 100px;
+    height: 57px;
+    background: url(/img/boomin.png) no-repeat 0 0;
+    display: block;
+}
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
+.menu_li{
+    float: left;
+    margin: 0 10px;
+}
+.menu_link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+.bt-sigin {
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+.bt-sigup {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #25023a;
+}
+.apresentacao {
+    padding-top: 20px;
+}
+/* Estilo corpo da pagina */
+.apresentacao_box{
+    padding-top: 100px;
+}
+.tittle-apresetacao{
+    color: #1f0022;
+    font-size: 44px;
+    line-height: 48px;
+}
+.tittle-apresetacao strong{
+    font-weight: 600;
+}
+.text-apresentacao{
+    color: #1f0022;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 40px 0 30px 0;
+}
+.apresentacao_descricao{
+    width: 50%;
+    float: left;
+    padding-top: 45px;
+}
+
+.apresentacao_video{
+
+    width: 50%;
+    float: left;
+}
+.bt-red{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background: #d16704;
+    display: inline-block;
+}
+/* Limpeza do float*/
+.clear {
+    clear: both;
+}
+/* centralizando pagina */
+.center {
+    width: 1110px;
+    margin: 0 auto;
+}
