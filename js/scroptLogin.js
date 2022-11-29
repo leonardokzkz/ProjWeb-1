@@ -7,7 +7,6 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 /* Validação de campos em branco */
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    nameValidate();
     emailValidate();
     mainPasswordValidate();
     
@@ -27,9 +26,10 @@ function removeError(index) {
     spans[index].style.display = 'none';
 }
 
-/* Validação de Nome */
-function nameValidate(){
-    if(campos[0].value.length < 3)
+/* Validação Email */
+
+function emailValidate(){
+    if(!emailRegex.test(campos[0].value))
     {
         setError(0);
     }
@@ -39,29 +39,16 @@ function nameValidate(){
     }
 }
 
-/* Validação Email */
+/* Validação Password */
 
-function emailValidate(){
-    if(!emailRegex.test(campos[1].value))
+function mainPasswordValidate(){
+    if(campos[1].value.length < 8)
     {
         setError(1);
     }
     else
     {
         removeError(1);
-    }
-}
-
-/* Validação Password */
-
-function mainPasswordValidate(){
-    if(campos[2].value.length < 8)
-    {
-        setError(2);
-    }
-    else
-    {
-        removeError(2);
     }
 }
 
