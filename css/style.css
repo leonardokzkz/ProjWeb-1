@@ -48,11 +48,11 @@ html, body{
     font-family: 'Poppins', sans-serif;
 }
 h1, h6, p {
-    color: white;
+    color: rgb(66, 28, 102);
 }
 /* Imagem de fundo */
 body {
-    background: url(/img/background.jpg) no-repeat center 0;
+    background: url(/img/background.jpg) repeat center 0;
 }
 /* Esttilo cabeçalho */
 .logomarca {
@@ -72,29 +72,29 @@ body {
     margin: 0 10px;
 }
 .menu_link {
-    color: white;
+    color: rgb(65, 1, 102);
     text-decoration: none;
     font-size: 14px;
     line-height: 16px;
 }
 .bt-sigin {
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 30px;
     border-radius: 4px;
     margin-left: 30px;
 }
-.bt-sigup {
+.bt-sigup, .bt-sigin-login, .button-login {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 30px;
     border-radius: 4px;
-    background: #25023a;
+    background: #000000;
 }
 .apresentacao {
     padding-top: 20px;
@@ -130,11 +130,54 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px 30px;
     border-radius: 4px;
-    background: #d16704;
+    background: #000000;
     display: inline-block;
+}
+/* Estilo do Span login/registre-se */
+.span-required {
+    display: none;
+    font-size: 11px;
+    margin: 0px 0 0 1px;
+    color: #d62222;
+    text-align: center;
+}
+/* Estilo pagina Login/registre-se */
+.content-login {
+    margin: 10% 0 0 25%;
+    width: 50%;
+    content: block;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.registro-login {
+    font-size: 30px;
+    color: rgb(66, 28, 102);
+}
+.span-required {
+    font-size: 13px;
+    color: red;
+}
+.registro-login, .input-login, .button-login {
+    padding: 5px;
+    margin: 5px 0 5px 0;
+}
+.input-login {
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.input-login:focus {
+    border-color: blueviolet;
 }
 /* Estilo icones histórias*/
 .box-icone {
@@ -162,79 +205,10 @@ body {
     clear: both;
 }
 /* centralizando pagina */
-.center{
+.center {
     width: 1110px;
     margin: 0 auto;
 }
-
-
-/******************* Estilo Login e Registro ***************/
-.content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10%;
-    height: 35%;
-    background-color: rgb(104, 37, 104);
-    border-radius: 20%;
-    text-align: center;
-    padding-top: 10px;
-    min-width: 25%;
-    min-height: 40%;
-    overflow: auto;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
-}
-.content form{
-    flex-direction: column;
-}
-.span-required {
-    display: none;
-    font-size: 11px;
-    margin: 0px 0 0 1px;
-    color: rgb(214, 34, 34);
-    text-align: center;
-
-}
-.inputs {
-    border: 0;
-    padding: 10px 0 10px 0;
-    margin: 10px 0 10px 0;
-    border-radius: 6px;
-    color: gray;
-    outline: none;
-}
-.inputs:hover {
-    background-color: #25023a;
-    
-}
-button {
-    margin-top: 5px;
-    outline: none;
-    transition-duration: 0.4s;
-    background-color: #ffffff;
-    border-radius: 25px;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-  
-  button:hover {
-    border: 0;
-    border-style: none;
-    background-color: #9541ce;
-    color: white;
-  }
-/*  Estilo Textos H1 */
-.registro {
-    text-align: center;
-    padding: 30px 0 10px 0;
-    font-size: 50px;
-    font-weight: 600;
+footer {
+    margin: 140px 0 0 0;
 }

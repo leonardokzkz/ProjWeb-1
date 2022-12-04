@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
 
 /* FUNÇOES */
 
-/* Função seta Error */
+/* Função seta Erro */
 function setError(index){
     campos[index].style.border = '2px solid #e63636';
     spans[index].style.display = 'block';

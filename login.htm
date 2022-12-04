@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logotipomin.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Login</title>
 </head>
-<body>
-    <div class="content">
-        <h1 class="registro">Login</h1>
+<body class="center">
+    <header class="apresentacao">
+        <div class="">
+            <a href="index.htm">
+                <i class="logomarca"></i>
+            </a>
+            <ul class="menu">
+                <li class="menu_li">
+                    <a href="index.htm" class="menu_link">Home</a>
+                </li>
+                <li class="menu_li">
+                    <a href="home.htm" class="menu_link">Histórias</a>
+                </li>
+                <li class="menu_li">
+                    <a href="sign-up.htm" class="bt-sigup">Registre-se</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <div class="content-login">
+        <h1 class="registro-login">Login</h1>
         <form action="">
             <div>
-                <input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
-                <span class="span-required">email inválido</span>
+                <input type="email" placeholder="Digite seu email" class="inputs input-login required" oninput="emailValidate()">
+                <span class="span-required">Email inválido</span>
             </div>
             <div>
-                <input type="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidate()">
-                <span class="span-required">Senha incorreta</span>
+                <input type="password" placeholder="Digite sua senha" class="inputs required input-login"
+                    oninput="mainPasswordValidate()">
+                <br><span class="span-required">Senha incorreta</span>
             </div>
-            <button type="submit">Enviar!</button>
+            <button class="button-login" type="submit">Enviar!</button>
         </form>
+        <br><img src="img/gifs/CaveiraDanca.gif">
     </div>
-<script src="js/scroptLogin.js"></script>
+    <script src="js/scroptLogin.js"></script>
+    <footer>
+        <!--Rodapé, com imagem e email's-->
+        <div class="emails" style="text-align: center;">
+            <hr style="width:100%; border-style: dashed;">
+            <ul>
+                <li>
+                    leonardofafundes@sapo.pt
+                </li>
+                <li>
+                    rayshadows@proton.me
+                </li>
+            </ul>
+        </div>
+        <p class="p-direitos" style="text-align: center;">&copy; Todos os Direitos Reservados</p>
+        <div class="logotipo" style="text-align: center;">
+            <img class="abo" src="img/gifs/Aborbora.gif" alt="Abóbora">
+            <!--logo abóbora-->
+        </div>
+    </footer>
 </body>
 </html>

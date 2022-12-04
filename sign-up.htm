@@ -6,27 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logotipomin.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Sign-Up</title>
 </head>
-<body>
-    <div class="content">
-        <h1 class="registro">Registro</h1>
+<body class="center">
+    <header class="apresentacao">
+        <div class="">
+            <a href="index.htm">
+                <i class="logomarca"></i>
+            </a>
+            <ul class="menu">
+                <li class="menu_li">
+                    <a href="index.htm" class="menu_link">Home</a>
+                </li>
+                <li class="menu_li">
+                    <a href="home.htm" class="menu_link">Histórias</a>
+                </li>
+                <li class="menu_li">
+                    <a href="login.htm" class="bt-sigin-login">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <div class="content-login">
+        <h1 class="registro-login">Registro</h1>
         <form id="form">
             <div class="">
-                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
-                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                <input type="text" placeholder="Digite seu nome" class="inputs input-login required" oninput="nameValidate()">
+                <br><span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
             </div>
             <div>
-                <input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
+                <input type="email" placeholder="Digite seu email" class="inputs input-login required" oninput="emailValidate()">
                 <span class="span-required">Digite um email válido</span>
             </div>
             <div>
-                <input type="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidate()">
-                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                <input type="password" placeholder="Digite sua senha" class="inputs input-login required"
+                    oninput="mainPasswordValidate()">
+                <br><span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
-            <button type="submit">Enviar!</button>
+            <button class="button-login" type="submit">Enviar!</button>
         </form>
+        <br>
+
+        <img src="img/gifs/CasaMal.gif">
+        <footer>
+            <!--Rodapé, com imagem e email's-->
+            <div class="emails" style="text-align: center;">
+                <hr style="width:100%; border-style: dashed;">
+                <ul>
+                    <li>
+                        leonardofafundes@sapo.pt
+                    </li>
+                    <li>
+                        rayshadows@proton.me
+                    </li>
+                </ul>
+            </div>
+            <p class="p-direitos" style="text-align: center;">&copy; Todos os Direitos Reservados</p>
+            <div class="logotipo" style="text-align: center;">
+                <img class="abo" src="img/gifs/Aborbora.gif" alt="Abóbora">
+                <!--logo abóbora-->
+            </div>
+        </footer>
     </div>
-<script src="js/script-sl.js"></script>
+    <script src="js/script-sl.js"></script>
 </body>
 </html>
