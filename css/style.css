@@ -52,13 +52,13 @@ h1, h6, p {
 }
 /* Imagem de fundo */
 body {
-    background: url(/img/background.jpg) repeat center 0;
+    background: url(../img/background.png) repeat center 0;
 }
 /* Esttilo cabeçalho */
 .logomarca {
     width: 100px;
     height: 57px;
-    background: url(/img/boomin.png) no-repeat 0 0;
+    background: url(../img/boomin.png) no-repeat 0 0;
     display: block;
 }
 .logo{
