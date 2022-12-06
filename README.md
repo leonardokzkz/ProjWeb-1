@@ -18,7 +18,7 @@ As validações de formulario nome, email e senha foram feitas com JavaScript.
 
 Projeto ainda está em desenvolvimento, em breve as informações da validação irão ir para um banco de dado.
 
-Sistema esta mais focado no Front-End nesse inicio.
+Nesse inicio o sistema esta mais focado no Front-End.
 
 ## Considerações finais
 
