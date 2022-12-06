@@ -24,4 +24,4 @@ Sistema esta mais focado no Front-End nesse inicio.
 
 Boas horas de estudo, dedicação ao trabalho e mais uma experiência adquirida com o desenvolvimento Web.
 
-### Site online aqui: **https://leonardokzkz.github.io/ProjWeb-1/**.*
+### Site online aqui: **https://leonardokzkz.github.io/ProjWeb-1/**.
