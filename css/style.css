@@ -1,214 +1,111 @@
-/* Resete CSS - Padronização para todos navegadores*/
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Fontes */
-html, body{
-    font-family: 'Poppins', sans-serif;
-}
-h1, h6, p {
-    color: rgb(66, 28, 102);
-}
-/* Imagem de fundo */
-body {
-    background: url(../img/background.png) repeat center 0;
-}
-/* Esttilo cabeçalho */
-.logomarca {
-    width: 100px;
-    height: 57px;
-    background: url(../img/boomin.png) no-repeat 0 0;
-    display: block;
-}
-.logo{
-    float: left;
-}
-.menu{
-    float: right;
-}
-.menu_li{
-    float: left;
-    margin: 0 10px;
-}
-.menu_link {
-    color: rgb(65, 1, 102);
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 16px;
-}
-.bt-sigin {
-    border: 1px solid rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    padding: 10px 30px;
-    border-radius: 4px;
-    margin-left: 30px;
-}
-.bt-sigup, .bt-sigin-login, .button-login {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    padding: 10px 30px;
-    border-radius: 4px;
-    background: #000000;
-}
-.apresentacao {
-    padding-top: 20px;
-}
-/* Estilo corpo da pagina */
-.apresentacao_box{
-    padding-top: 100px;
-}
-.tittle-apresetacao{
-    font-size: 44px;
-    line-height: 48px;
-}
-.tittle-apresetacao strong{
-    font-weight: 600;
-}
-.text-apresentacao{
-    font-size: 18px;
-    line-height: 24px;
-    margin: 40px 0 30px 0;
-}
-.apresentacao_descricao{
-    width: 50%;
-    float: left;
-    padding-top: 45px;
+  font-family: Arial, sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
 }
 
-.apresentacao_video{
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
 
-    width: 50%;
-    float: left;
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
-.bt-red{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    padding: 15px 30px;
-    border-radius: 4px;
-    background: #000000;
-    display: inline-block;
+
+a:hover {
+  color: var(--primary-color);
 }
-/* Estilo do Span login/registre-se */
-.span-required {
-    display: none;
-    font-size: 11px;
-    margin: 0px 0 0 1px;
-    color: #d62222;
-    text-align: center;
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border: none;
 }
-/* Estilo pagina Login/registre-se */
-.content-login {
-    margin: 10% 0 0 25%;
-    width: 50%;
-    content: block;
-    text-align: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
+
+.btn:hover {
+  background-color: var(--secondary-color);
 }
-.registro-login {
-    font-size: 30px;
-    color: rgb(66, 28, 102);
+
+.btn-primary {
+  background-color: var(--primary-color);
 }
-.span-required {
-    font-size: 13px;
-    color: red;
+
+.btn-secondary {
+  background-color: var(--secondary-color);
 }
-.registro-login, .input-login, .button-login {
-    padding: 5px;
-    margin: 5px 0 5px 0;
+
+.btn-success {
+  background-color: var(--success-color);
 }
-.input-login {
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #000000;
-    box-sizing: border-box;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
+
+.btn-danger {
+  background-color: var(--danger-color);
 }
-.input-login:focus {
-    border-color: blueviolet;
+
+.btn-warning {
+  background-color: var(--warning-color);
 }
-/* Estilo icones histórias*/
-.box-icone {
-    width: 80px;
-    height: 80px;
+
+.btn-info {
+  background-color: var(--info-color);
 }
-.box-icone-titulo{
-    font-size: 22px;
-    font-weight: 600;
-    margin: 20px 0;
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  border: 1px solid var(--secondary-color);
 }
-.box-icone-texto{
-    font-size: 16px;
-    line-height: 22px;
+
+.alert-primary {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border-color: var(--primary-color);
 }
-.box-wrapper{
-    width: 25%;
-    float: left;
+
+.alert-secondary {
+  color: var(--secondary-color);
+  background-color: var(--light-color);
+  border-color: var(--secondary-color);
 }
-.icones{
-    padding: 150px  0;
+
+.alert-success {
+  color: var(--success-color);
+  background-color: var(--light-color);
+  border-color: var(--success-color);
 }
-/* Limpeza do float*/
-.clear {
-    clear: both;
+
+.alert-danger {
+  color: var(--danger-color);
+  background-color: var(--light-color);
+  border-color: var(--danger-color);
 }
-/* centralizando pagina */
-.center {
-    width: 1110px;
-    margin: 0 auto;
+
+.alert-warning {
+  color: var(--warning-color);
+  background-color: var(--light-color);
+  border-color: var(--warning-color);
 }
-footer {
-    margin: 140px 0 0 0;
+
+.alert-info {
+  color: var(--info-color);
+  background-color: var(--light-color);
+  border-color: var(--info-color);
 }
