@@ -1,111 +1,83 @@
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #17a2b8;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
+  /* Define variáveis para as cores */
+  --primary-color: #3366FF;
+  --secondary-color: #FFC433;
+  --tertiary-color: #A0A0A0;
 }
 
+/* Define a fonte padrão para todo o documento */
 body {
   font-family: Arial, sans-serif;
-  color: var(--dark-color);
-  background-color: var(--light-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+/* Define as propriedades da barra de navegação */
+nav {
+  background-color: var(--primary-color); /* usa a variável para a cor de fundo */
+  color: #fff; /* define a cor do texto como branco */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-a {
-  color: var(--secondary-color);
+/* Define as propriedades dos links da barra de navegação */
+nav a {
+  color: #fff; /* define a cor do texto dos links como branco */
   text-decoration: none;
+  padding: 10px;
 }
 
-a:hover {
-  color: var(--primary-color);
+/* Define as propriedades dos links de hover da barra de navegação */
+nav a:hover {
+  background-color: var(--tertiary-color); /* usa a variável para a cor de fundo do hover */
 }
 
-.btn {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 10px 20px;
-  color: var(--light-color);
-  background-color: var(--primary-color);
-  border: none;
+/* Define as propriedades da seção de cabeçalho */
+header {
+  background-color: var(--secondary-color); /* usa a variável para a cor de fundo */
+  color: #fff; /* define a cor do texto como branco */
+  text-align: center;
+  padding: 50px;
 }
 
-.btn:hover {
-  background-color: var(--secondary-color);
+/* Define as propriedades do título da seção de cabeçalho */
+header h1 {
+  font-size: 36px;
+  margin: 0;
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
+/* Define as propriedades do conteúdo principal */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
 }
 
-.btn-secondary {
-  background-color: var(--secondary-color);
-}
-
-.btn-success {
-  background-color: var(--success-color);
-}
-
-.btn-danger {
-  background-color: var(--danger-color);
-}
-
-.btn-warning {
-  background-color: var(--warning-color);
-}
-
-.btn-info {
-  background-color: var(--info-color);
-}
-
-.alert {
-  padding: 15px;
+/* Define as propriedades dos itens do conteúdo principal */
+main .item {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  border-radius: 5px;
-  color: var(--dark-color);
-  background-color: var(--light-color);
-  border: 1px solid var(--secondary-color);
+  padding: 20px;
+  width: calc(33.33% - 10px);
 }
 
-.alert-primary {
-  color: var(--primary-color);
-  background-color: var(--light-color);
-  border-color: var(--primary-color);
+/* Define as propriedades dos links dentro dos itens do conteúdo principal */
+main .item a {
+  color: var(--primary-color); /* usa a variável para a cor do texto dos links */
 }
 
-.alert-secondary {
-  color: var(--secondary-color);
-  background-color: var(--light-color);
-  border-color: var(--secondary-color);
+/* Define as propriedades dos links de hover dentro dos itens do conteúdo principal */
+main .item a:hover {
+  text-decoration: underline;
 }
 
-.alert-success {
-  color: var(--success-color);
-  background-color: var(--light-color);
-  border-color: var(--success-color);
-}
-
-.alert-danger {
-  color: var(--danger-color);
-  background-color: var(--light-color);
-  border-color: var(--danger-color);
-}
-
-.alert-warning {
-  color: var(--warning-color);
-  background-color: var(--light-color);
-  border-color: var(--warning-color);
-}
-
-.alert-info {
-  color: var(--info-color);
-  background-color: var(--light-color);
-  border-color: var(--info-color);
+/* Define as propriedades do rodapé */
+footer {
+  background-color: var(--primary-color); /* usa a variável para a cor de fundo */
+  color: #fff; /* define a cor do texto como branco */
+  text-align: center;
+  padding: 20px;
 }
