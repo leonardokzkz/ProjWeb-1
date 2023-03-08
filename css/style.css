@@ -1,1 +1,111 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+}
+
+.btn-info {
+  background-color: var(--info-color);
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.alert-primary {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border-color: var(--primary-color);
+}
+
+.alert-secondary {
+  color: var(--secondary-color);
+  background-color: var(--light-color);
+  border-color: var(--secondary-color);
+}
+
+.alert-success {
+  color: var(--success-color);
+  background-color: var(--light-color);
+  border-color: var(--success-color);
+}
+
+.alert-danger {
+  color: var(--danger-color);
+  background-color: var(--light-color);
+  border-color: var(--danger-color);
+}
+
+.alert-warning {
+  color: var(--warning-color);
+  background-color: var(--light-color);
+  border-color: var(--warning-color);
+}
+
+.alert-info {
+  color: var(--info-color);
+  background-color: var(--light-color);
+  border-color: var(--info-color);
+}
