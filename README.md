@@ -1,6 +1,6 @@
 # Site de Holloween / ProjetoWeb-1
 
-*Desenvolvido por: **Leonardo Fagundes(https://github.com/leonardokzkz).*
+*Desenvolvido por: **Leonardo Fagundes(https://github.com/leonardokzkz).**
 
 Projeto de Site de Halloween feito para postar histórias de terro dos dias das bruxas, com registre-se e login.
 
